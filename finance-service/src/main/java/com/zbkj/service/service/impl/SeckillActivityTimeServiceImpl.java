@@ -113,7 +113,7 @@ public class SeckillActivityTimeServiceImpl extends ServiceImpl<SeckillActivityT
     @Override
     public List<Integer> findActivityByDateTime(Integer dateInt, Integer timeInt) {
         LambdaQueryWrapper<SeckillActivityTime> lqw = Wrappers.lambdaQuery();
-        lqw.select(SeckillActivityTime::getId, SeckillActivityTime::getSeckillId);
+        lqw.select(SeckillActivityTime::getSeckillId);
         lqw.le(SeckillActivityTime::getStartDate, dateInt);
         lqw.ge(SeckillActivityTime::getEndDate, dateInt);
         lqw.le(SeckillActivityTime::getStartTime, timeInt);

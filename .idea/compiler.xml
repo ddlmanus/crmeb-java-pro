@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="finance-common" />
+        <module name="finance-front" />
+        <module name="finance-generate" />
+        <module name="finance-service" />
+        <module name="finance-admin" />
+        <module name="finance-pc" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="finance-admin" options="-verbose -parameters" />
+      <module name="finance-common" options="-verbose -parameters" />
+      <module name="finance-front" options="-verbose -parameters" />
+      <module name="finance-generate" options="-verbose -parameters" />
+      <module name="finance-pc" options="-verbose -parameters" />
+      <module name="finance-service" options="-verbose -parameters" />
+      <module name="finance-shop" options="-verbose -parameters" />
+    </option>
+  </component>
+</project>

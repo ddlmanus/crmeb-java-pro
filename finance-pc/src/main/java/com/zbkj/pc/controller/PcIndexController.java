@@ -3,6 +3,7 @@ package com.zbkj.pc.controller;
 import com.github.pagehelper.PageInfo;
 import com.zbkj.common.model.article.Article;
 import com.zbkj.common.model.product.Product;
+import com.zbkj.common.model.seckill.SeckillProduct;
 import com.zbkj.common.page.CommonPage;
 import com.zbkj.common.request.PageParamRequest;
 import com.zbkj.common.request.ProductFrontSearchRequest;
@@ -11,6 +12,7 @@ import com.zbkj.common.response.*;
 import com.zbkj.common.result.CommonResult;
 import com.zbkj.common.vo.PcHomeBannerVo;
 import com.zbkj.common.vo.ProCategoryCacheVo;
+import com.zbkj.pc.service.PcIndexService;
 import com.zbkj.pc.service.PcShoppingService;
 import com.zbkj.service.service.*;
 import io.swagger.annotations.Api;
@@ -53,6 +55,8 @@ public class PcIndexController {
 
     @Autowired
     private PcShoppingService pcShoppingService;
+    @Autowired
+    private PcIndexService indexService;
 
     @ApiOperation(value = "获取首页banner")
     @RequestMapping(value = "/get/banner", method = RequestMethod.GET)
@@ -74,18 +78,15 @@ public class PcIndexController {
         }
     }
 
-    @ApiOperation("获取热门搜索关键词")
-    @GetMapping("/hot-keywords")
-    public CommonResult<List<HashMap<String, Object>>> getHotKeywords() {
-        try {
-            log.info("获取热门搜索关键词");
-            // 使用系统组合数据服务获取热门搜索
-            List<HashMap<String, Object>> keywordsList = systemGroupDataService.getListMapByGid(3); // GROUP_DATA_ID_INDEX_KEYWORDS = 3
-            return CommonResult.success(keywordsList);
-        } catch (Exception e) {
-            log.error("获取热门搜索关键词失败", e);
-            return CommonResult.failed("获取热门搜索关键词失败");
-        }
+    @ApiOperation(value = "热门搜索")
+    @RequestMapping(value = "/search/keyword", method = RequestMethod.GET)
+    public CommonResult<List<HashMap<String, Object>>> hotKeywords() {
+        return CommonResult.success(indexService.hotKeywords());
+    }
+    @ApiOperation(value = "获取底部导航信息")
+    @RequestMapping(value = "/get/bottom/navigation", method = RequestMethod.GET)
+    public CommonResult<PageLayoutBottomNavigationResponse> getBottomNavigation() {
+        return CommonResult.success(indexService.getBottomNavigationInfo());
     }
 
     @ApiOperation("获取商品分类")
@@ -160,22 +161,10 @@ public class PcIndexController {
         }
     }
 
-    @ApiOperation("获取秒杀商品")
-    @GetMapping("/seckill-products")
-    public CommonResult<CommonPage<SeckillProductPageResponse>> getSeckillProducts(@RequestParam(defaultValue = "12") Integer limit) {
-        try {
-            log.info("获取秒杀商品，数量: {}", limit);
-            SeckillProductSearchRequest pageParamRequest = new SeckillProductSearchRequest();
-            pageParamRequest.setPage(1);
-            pageParamRequest.setLimit(limit);
-            
-            // 使用秒杀服务获取秒杀商品
-            PageInfo<SeckillProductPageResponse> pageInfo = seckillProductService.getSeckillProductPage(pageParamRequest);
-            return CommonResult.success(CommonPage.restPage(pageInfo.getList()));
-        } catch (Exception e) {
-            log.error("获取秒杀商品失败", e);
-            return CommonResult.failed("获取秒杀商品失败");
-        }
+    @ApiOperation(value = "首页秒杀信息")
+    @RequestMapping(value = "/seckill/info", method = RequestMethod.GET)
+    public CommonResult<List<SeckillProduct>> getIndexSeckillInfo() {
+        return CommonResult.success(indexService.getIndexSeckillInfo());
     }
 
     @ApiOperation("获取首页头条新闻")
