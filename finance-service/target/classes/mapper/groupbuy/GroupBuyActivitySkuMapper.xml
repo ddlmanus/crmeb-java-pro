@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zbkj.service.dao.groupby.GroupBuyActivitySkuDao">
+
+    <select id="getListByGroupProductIdByList" resultType="com.zbkj.common.response.groupbuy.GroupBuyActivityProductListForSale">
+        SELECT
+            sku.id,
+            sku.product_id,
+            sku.group_activity_id,
+            sku.active_price,
+            sku.quota_show,
+            sku.quota,
+            sku.sku_id,
+            sku.group_status,
+            sku.activity_status,
+            ac.group_name,
+            ac.group_status AS activity_group_status,
+            ac.product_count,
+            ac.buy_count,
+            ac.show_group,
+            ac.ficti_status,
+            ac.total_order_begin,
+            ac.activity_status AS activity_activity_status,
+            product.image AS image_url,  -- 从 eb_product 表中获取商品图片
+            product.name AS product_name, -- 从 eb_product 表中获取商品名称
+            product.price AS price -- 从 eb_product 表中获取商品售价
+        FROM
+            eb_group_buy_activity_sku sku
+                JOIN
+            eb_group_buy_activity ac ON sku.group_activity_id = ac.id
+                JOIN
+            eb_product product ON sku.product_id = product.id
+        WHERE
+            ac.group_status = 4     -- 审核成功的状态
+          AND ac.activity_status = 1 AND ac.group_status = 4 AND ac.is_del = 0 -- 开启的拼团活动 并且审核通过的
+          AND NOW() BETWEEN ac.start_time AND ac.end_time -- 符合活动时间的商品
+          AND product.is_del = 0
+          AND product.audit_status = 2 OR product.audit_status = 0 -- 审核成功 和 免审商品
+          <if test="showgroup != null and showgroup !='' and showgroup > -1">
+              AND ac.show_group = #{showgroup} -- 根据条件查询开启凑团 凑团 0不可见，1可见
+          </if>
+        GROUP BY
+            sku.product_id, sku.group_activity_id
+        ORDER BY
+            ac.create_time DESC, ac.id DESC , product.id DESC
+            LIMIT #{limit} OFFSET #{offset};
+    </select>
+
+<!--    <select id="getGroupBuyProductListForSale" resultType="com.zbkj.common.response.groupbuy.GroupBuyActivityProductListForSale">-->
+<!--        SELECT-->
+<!--        sku.product_id,-->
+<!--        MAX(sku.id) AS sku_id,            &#45;&#45; 获取 SKU ID-->
+<!--        MAX(sku.active_price) AS active_price,  &#45;&#45; 获取活动价-->
+<!--        MAX(sku.quota_show) AS quota_show,      &#45;&#45; 获取拼团限购数量-->
+<!--        MAX(sku.quota) AS quota,                &#45;&#45; 获取拼团剩余数量-->
+<!--        activity.group_name AS group_name,      &#45;&#45; 活动名称-->
+<!--        activity.id AS group_activity_id,         &#45;&#45; 活动id-->
+<!--        activity.valid_hour AS valid_hour,         &#45;&#45; 成团有效期 小时数-->
+<!--        activity.buy_count AS buy_count,            &#45;&#45; 成团总人数 - 真团-->
+<!--        activity.all_quota AS all_quota,            &#45;&#45; 购买上限-->
+<!--        MAX(activity.start_time) AS start_time, &#45;&#45; 获取最大开始时间-->
+<!--        MAX(activity.end_time) AS end_time,     &#45;&#45; 获取最大结束时间-->
+<!--        activity.group_status AS group_status, &#45;&#45; 获取最大控制状态-->
+<!--        MAX(activity.mer_name) AS mer_name        &#45;&#45; 获取商户名称-->
+<!--        product.image AS image_url,  &#45;&#45; 从 eb_product 表中获取商品图片-->
+<!--        product.name AS product_name, &#45;&#45; 从 eb_product 表中获取商品名称-->
+<!--        product.price AS price &#45;&#45; 从 eb_product 表中获取商品售价-->
+<!--        FROM-->
+<!--        eb_group_buy_activity_sku AS sku-->
+<!--        JOIN-->
+<!--        eb_group_buy_activity AS activity ON sku.group_activity_id = activity.id-->
+<!--        JOIN-->
+<!--        eb_product AS product ON sku.product_id = product.id  &#45;&#45; 连接商品表-->
+<!--        WHERE-->
+<!--            ac.group_status = 4     &#45;&#45; 审核成功的状态-->
+<!--          AND ac.activity_status = 1 &#45;&#45; 开启的拼团活动-->
+<!--          AND NOW() BETWEEN ac.start_time AND ac.end_time &#45;&#45; 符合活动时间的商品-->
+<!--          AND product.is_del = 0-->
+<!--          AND product.audit_status = 2 &#45;&#45; 审核成功-->
+<!--          AND ac.show_group = #{showgroup} &#45;&#45; 根据条件查询开启凑团 凑团 0不可见，1可见-->
+<!--        GROUP BY-->
+<!--        sku.product_id-->
+<!--        ORDER BY-->
+<!--        MAX(activity.start_time) ASC-->
+<!--        LIMIT #{limit} OFFSET #{offset};-->
+<!--    </select>-->
+</mapper>

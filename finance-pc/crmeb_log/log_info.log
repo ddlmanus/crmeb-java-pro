@@ -1,0 +1,347 @@
+2025-06-26 00:00:53.259 [http-nio-20002-exec-7] INFO  com.zbkj.pc.controller.PcIndexController - 获取商品分类
+2025-06-26 00:00:53.363 [http-nio-20002-exec-7] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcIndexController.getCategories()，prams：[]，cost time：103842582 ns，cost：103 ms
+2025-06-26 00:01:14.086 [http-nio-20002-exec-9] INFO  com.zbkj.pc.controller.PcIndexController - 获取推荐商品，数量: 12
+2025-06-26 00:01:15.095 [http-nio-20002-exec-9] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcIndexController.getRecommendProducts(Integer)，prams：[12]，cost time：1009572703 ns，cost：1009 ms
+2025-06-26 00:01:33.139 [http-nio-20002-exec-12] INFO  com.zbkj.pc.controller.PcIndexController - 获取首页轮播图
+2025-06-26 00:01:33.183 [http-nio-20002-exec-12] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcIndexController.getBanner()，prams：[]，cost time：43954600 ns，cost：43 ms
+2025-06-26 00:01:33.220 [http-nio-20002-exec-13] INFO  com.zbkj.pc.controller.PcIndexController - 获取商品分类
+2025-06-26 00:01:33.333 [http-nio-20002-exec-13] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcIndexController.getCategories()，prams：[]，cost time：113027970 ns，cost：113 ms
+2025-06-26 00:01:33.369 [http-nio-20002-exec-14] INFO  com.zbkj.pc.controller.PcIndexController - 获取首页完整数据
+2025-06-26 00:01:34.660 [http-nio-20002-exec-14] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcIndexController.getIndexData()，prams：[]，cost time：1290901808 ns，cost：1290 ms
+2025-06-26 00:02:15.143 [http-nio-20002-exec-16] INFO  com.zbkj.pc.controller.PcIndexController - 获取首页完整数据
+2025-06-26 00:02:16.434 [http-nio-20002-exec-16] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcIndexController.getIndexData()，prams：[]，cost time：1290753087 ns，cost：1290 ms
+2025-06-26 00:02:41.685 [http-nio-20002-exec-17] INFO  com.zbkj.pc.controller.PcIndexController - 获取首页完整数据
+2025-06-26 00:02:43.136 [http-nio-20002-exec-17] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcIndexController.getIndexData()，prams：[]，cost time：1450791462 ns，cost：1450 ms
+2025-06-26 00:02:50.741 [http-nio-20002-exec-19] INFO  com.zbkj.pc.controller.PcIndexController - 获取首页完整数据
+2025-06-26 00:02:52.044 [http-nio-20002-exec-19] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcIndexController.getIndexData()，prams：[]，cost time：1302442542 ns，cost：1302 ms
+2025-06-26 00:02:58.129 [http-nio-20002-exec-20] INFO  com.zbkj.pc.controller.PcIndexController - 获取首页完整数据
+2025-06-26 00:02:59.414 [http-nio-20002-exec-20] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcIndexController.getIndexData()，prams：[]，cost time：1285019613 ns，cost：1285 ms
+2025-06-26 00:04:04.493 [http-nio-20002-exec-22] INFO  com.zbkj.pc.controller.PcIndexController - 获取首页完整数据
+2025-06-26 00:04:05.933 [http-nio-20002-exec-22] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcIndexController.getIndexData()，prams：[]，cost time：1439108567 ns，cost：1439 ms
+2025-06-26 00:04:13.550 [http-nio-20002-exec-21] INFO  com.zbkj.pc.controller.PcIndexController - 获取首页完整数据
+2025-06-26 00:04:14.810 [http-nio-20002-exec-21] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcIndexController.getIndexData()，prams：[]，cost time：1260594982 ns，cost：1260 ms
+2025-06-26 00:04:28.178 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'taskExecutor'
+2025-06-26 00:04:28.284 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2025-06-26 00:04:28.294 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2025-06-26 00:04:45.891 [main] INFO  com.zbkj.pc.CrmebPcApplication - Starting CrmebPcApplication on macdeMacBook-Pro.local with PID 11986 (/Users/mac/tool/商城装修系统/finance/finance-pc/target/classes started by mac in /Users/mac/tool/商城装修系统/finance/finance-pc)
+2025-06-26 00:04:45.892 [main] INFO  com.zbkj.pc.CrmebPcApplication - The following profiles are active: dev
+2025-06-26 00:04:47.786 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-06-26 00:04:47.789 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-06-26 00:04:47.814 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11ms. Found 0 Redis repository interfaces.
+2025-06-26 00:04:48.876 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 20002 (http)
+2025-06-26 00:04:48.885 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-20002"]
+2025-06-26 00:04:48.886 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-06-26 00:04:48.886 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2025-06-26 00:04:49.228 [main] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-06-26 00:04:49.232 [main] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-06-26 00:04:49.233 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3281 ms
+2025-06-26 00:05:13.506 [main] INFO  c.a.c.config.AjCaptchaServiceAutoConfiguration - 自定义配置项：
+AjCaptchaProperties{type=DEFAULT, jigsaw='classpath:images/jigsaw', picClick='classpath:images/pic-click', waterMark='CRMEB Java', waterFont='WenQuanZhengHei.ttf', fontType='WenQuanZhengHei.ttf', slipOffset='5', aesStatus=true, interferenceOptions='2', cacheNumber='1000', timingClear='3600', cacheType=redis, reqFrequencyLimitEnable=false, reqGetLockLimit=5, reqGetLockSeconds=360, reqGetMinuteLimit=30, reqCheckMinuteLimit=60, reqVerifyMinuteLimit=60}
+2025-06-26 00:05:13.548 [main] INFO  com.anji.captcha.util.ImageUtils - 自定义resource底图:[SLIDING_BLOCK=[Ljava.lang.String;@981d9d2, ORIGINAL=[Ljava.lang.String;@ad6448e, PIC_CLICK=[Ljava.lang.String;@3da6950f]
+2025-06-26 00:05:13.549 [main] INFO  c.anji.captcha.service.impl.CaptchaServiceFactory - supported-captchaCache-service:[local]
+2025-06-26 00:05:13.553 [main] INFO  c.anji.captcha.service.impl.CaptchaServiceFactory - supported-captchaTypes-service:[clickWord, default, blockPuzzle]
+2025-06-26 00:05:13.553 [main] INFO  c.a.c.service.impl.ClickWordCaptchaServiceImpl - --->>>初始化验证码底图<<<---clickWord
+2025-06-26 00:05:13.678 [main] INFO  c.a.c.service.impl.BlockPuzzleCaptchaServiceImpl - --->>>初始化验证码底图<<<---blockPuzzle
+2025-06-26 00:05:17.351 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2025-06-26 00:05:17.620 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@18b88f7, org.springframework.security.web.context.SecurityContextPersistenceFilter@4628f386, org.springframework.security.web.header.HeaderWriterFilter@495598c5, org.springframework.security.web.authentication.logout.LogoutFilter@6137dc84, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7385a72f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@20e25bf7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@128ebca1, org.springframework.security.web.session.SessionManagementFilter@137db13f, org.springframework.security.web.access.ExceptionTranslationFilter@53ce27fa, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@623c9988]
+2025-06-26 00:05:17.914 [main] INFO  org.redisson.Version - Redisson 3.14.1
+2025-06-26 00:05:18.518 [redisson-netty-2-13] INFO  o.r.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for /43.138.4.152:6379
+2025-06-26 00:05:18.712 [redisson-netty-2-20] INFO  org.redisson.connection.pool.MasterConnectionPool - 24 connections initialized for /43.138.4.152:6379
+2025-06-26 00:05:18.840 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2025-06-26 00:05:18.875 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService
+2025-06-26 00:05:18.876 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'taskExecutor'
+2025-06-26 00:05:19.738 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2025-06-26 00:05:19.753 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 2 custom documentation plugin(s)
+2025-06-26 00:05:19.784 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2025-06-26 00:05:20.396 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2025-06-26 00:05:20.412 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-20002"]
+2025-06-26 00:05:20.438 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 20002 (http) with context path '/api'
+2025-06-26 00:05:20.441 [main] INFO  com.zbkj.pc.CrmebPcApplication - Started CrmebPcApplication in 35.251 seconds (JVM running for 35.841)
+2025-06-26 00:05:23.452 [http-nio-20002-exec-1] INFO  org.apache.tomcat.util.http.parser.Cookie - A cookie header was received [1750642704,1750732318,1750812600] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2025-06-26 00:05:23.527 [http-nio-20002-exec-1] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-26 00:05:23.528 [http-nio-20002-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-06-26 00:05:23.547 [http-nio-20002-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 18 ms
+2025-06-26 00:05:23.623 [http-nio-20002-exec-1] INFO  com.zbkj.pc.controller.PcIndexController - 获取首页完整数据
+2025-06-26 00:05:23.753 [http-nio-20002-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2025-06-26 00:05:26.376 [http-nio-20002-exec-1] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcIndexController.getIndexData()，prams：[]，cost time：2754531885 ns，cost：2754 ms
+2025-06-26 00:05:31.801 [main] INFO  com.zbkj.pc.CrmebPcApplication - Starting CrmebPcApplication on macdeMacBook-Pro.local with PID 12111 (/Users/mac/tool/商城装修系统/finance/finance-pc/target/classes started by mac in /Users/mac/tool/商城装修系统/finance/finance-pc)
+2025-06-26 00:05:31.802 [main] INFO  com.zbkj.pc.CrmebPcApplication - The following profiles are active: dev
+2025-06-26 00:05:33.965 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-06-26 00:05:33.967 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-06-26 00:05:33.992 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10ms. Found 0 Redis repository interfaces.
+2025-06-26 00:05:35.035 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 20002 (http)
+2025-06-26 00:05:35.045 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-20002"]
+2025-06-26 00:05:35.045 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-06-26 00:05:35.045 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2025-06-26 00:05:35.609 [main] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-06-26 00:05:35.614 [main] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-06-26 00:05:35.615 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3737 ms
+2025-06-26 00:05:42.776 [http-nio-20002-exec-2] INFO  com.zbkj.pc.controller.PcIndexController - 获取首页完整数据
+2025-06-26 00:05:44.177 [http-nio-20002-exec-2] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcIndexController.getIndexData()，prams：[]，cost time：1401395101 ns，cost：1401 ms
+2025-06-26 00:05:44.692 [http-nio-20002-exec-3] INFO  com.zbkj.pc.controller.PcProductController - 获取商品详情，商品ID: 776
+2025-06-26 00:05:45.249 [http-nio-20002-exec-3] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcProductController.getProductDetail(Integer)，prams：[776]，cost time：560955460 ns，cost：560 ms
+2025-06-26 00:05:48.012 [http-nio-20002-exec-5] INFO  com.zbkj.pc.controller.PcProductController - 获取商品详情，商品ID: 776
+2025-06-26 00:05:48.366 [http-nio-20002-exec-5] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcProductController.getProductDetail(Integer)，prams：[776]，cost time：354584166 ns，cost：354 ms
+2025-06-26 00:05:56.898 [main] INFO  c.a.c.config.AjCaptchaServiceAutoConfiguration - 自定义配置项：
+AjCaptchaProperties{type=DEFAULT, jigsaw='classpath:images/jigsaw', picClick='classpath:images/pic-click', waterMark='CRMEB Java', waterFont='WenQuanZhengHei.ttf', fontType='WenQuanZhengHei.ttf', slipOffset='5', aesStatus=true, interferenceOptions='2', cacheNumber='1000', timingClear='3600', cacheType=redis, reqFrequencyLimitEnable=false, reqGetLockLimit=5, reqGetLockSeconds=360, reqGetMinuteLimit=30, reqCheckMinuteLimit=60, reqVerifyMinuteLimit=60}
+2025-06-26 00:05:56.940 [main] INFO  com.anji.captcha.util.ImageUtils - 自定义resource底图:[SLIDING_BLOCK=[Ljava.lang.String;@47cf922d, ORIGINAL=[Ljava.lang.String;@6b64921f, PIC_CLICK=[Ljava.lang.String;@439d649c]
+2025-06-26 00:05:56.942 [main] INFO  c.anji.captcha.service.impl.CaptchaServiceFactory - supported-captchaCache-service:[local]
+2025-06-26 00:05:56.945 [main] INFO  c.anji.captcha.service.impl.CaptchaServiceFactory - supported-captchaTypes-service:[clickWord, default, blockPuzzle]
+2025-06-26 00:05:56.945 [main] INFO  c.a.c.service.impl.ClickWordCaptchaServiceImpl - --->>>初始化验证码底图<<<---clickWord
+2025-06-26 00:05:57.060 [main] INFO  c.a.c.service.impl.BlockPuzzleCaptchaServiceImpl - --->>>初始化验证码底图<<<---blockPuzzle
+2025-06-26 00:05:59.281 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2025-06-26 00:05:59.503 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@531ed68e, org.springframework.security.web.context.SecurityContextPersistenceFilter@5fdcc63f, org.springframework.security.web.header.HeaderWriterFilter@79f82fc4, org.springframework.security.web.authentication.logout.LogoutFilter@67fda9fb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@473c491, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1d6ed085, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@551976c2, org.springframework.security.web.session.SessionManagementFilter@5dfb078, org.springframework.security.web.access.ExceptionTranslationFilter@5e783f78, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6e140753]
+2025-06-26 00:05:59.756 [main] INFO  org.redisson.Version - Redisson 3.14.1
+2025-06-26 00:06:00.119 [redisson-netty-2-17] INFO  o.r.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for /43.138.4.152:6379
+2025-06-26 00:06:00.343 [redisson-netty-2-19] INFO  org.redisson.connection.pool.MasterConnectionPool - 24 connections initialized for /43.138.4.152:6379
+2025-06-26 00:06:00.450 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2025-06-26 00:06:00.475 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService
+2025-06-26 00:06:00.476 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'taskExecutor'
+2025-06-26 00:06:01.315 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2025-06-26 00:06:01.372 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 2 custom documentation plugin(s)
+2025-06-26 00:06:01.405 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2025-06-26 00:06:01.972 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2025-06-26 00:06:01.988 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-20002"]
+2025-06-26 00:06:01.995 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-20002"]
+2025-06-26 00:06:01.995 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2025-06-26 00:06:02.004 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-20002"]
+2025-06-26 00:06:02.004 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-20002"]
+2025-06-26 00:06:02.029 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'taskExecutor'
+2025-06-26 00:06:02.102 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
+2025-06-26 00:09:06.849 [http-nio-20002-exec-6] INFO  com.zbkj.pc.controller.PcIndexController - 获取商品分类
+2025-06-26 00:09:06.944 [http-nio-20002-exec-6] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcIndexController.getCategories()，prams：[]，cost time：95312707 ns，cost：95 ms
+2025-06-26 00:09:19.230 [http-nio-20002-exec-8] INFO  com.zbkj.pc.controller.PcIndexController - 获取首页完整数据
+2025-06-26 00:09:20.782 [http-nio-20002-exec-8] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcIndexController.getIndexData()，prams：[]，cost time：1551962621 ns，cost：1551 ms
+2025-06-26 00:09:26.904 [http-nio-20002-exec-9] INFO  com.zbkj.pc.controller.PcProductController - 获取商品详情，商品ID: 776
+2025-06-26 00:09:27.282 [http-nio-20002-exec-9] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcProductController.getProductDetail(Integer)，prams：[776]，cost time：377636170 ns，cost：377 ms
+2025-06-26 00:09:47.513 [http-nio-20002-exec-10] INFO  com.zbkj.pc.controller.PcIndexController - 获取商品分类
+2025-06-26 00:09:47.608 [http-nio-20002-exec-10] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcIndexController.getCategories()，prams：[]，cost time：94363533 ns，cost：94 ms
+2025-06-26 00:10:17.255 [http-nio-20002-exec-11] INFO  com.zbkj.pc.controller.PcIndexController - 获取首页完整数据
+2025-06-26 00:10:18.556 [http-nio-20002-exec-11] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcIndexController.getIndexData()，prams：[]，cost time：1301245080 ns，cost：1301 ms
+2025-06-26 00:10:18.867 [http-nio-20002-exec-12] INFO  com.zbkj.pc.controller.PcProductController - 获取商品详情，商品ID: 776
+2025-06-26 00:10:19.227 [http-nio-20002-exec-12] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcProductController.getProductDetail(Integer)，prams：[776]，cost time：359928610 ns，cost：359 ms
+2025-06-26 00:10:21.375 [http-nio-20002-exec-14] INFO  com.zbkj.pc.controller.PcIndexController - 获取商品分类
+2025-06-26 00:10:21.466 [http-nio-20002-exec-14] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcIndexController.getCategories()，prams：[]，cost time：91814137 ns，cost：91 ms
+2025-06-26 00:10:21.478 [http-nio-20002-exec-15] INFO  com.zbkj.pc.controller.PcIndexController - 获取商品分类
+2025-06-26 00:10:21.491 [http-nio-20002-exec-16] INFO  com.zbkj.pc.controller.PcProductController - 根据分类获取商品，分类ID: 9, 页码: 1, 每页数量: 20
+2025-06-26 00:10:21.528 [http-nio-20002-exec-16] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcProductController.getByCategory(Integer,Integer,Integer)，prams：[9, 1, 20]，cost time：37339800 ns，cost：37 ms
+2025-06-26 00:10:21.541 [http-nio-20002-exec-15] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcIndexController.getCategories()，prams：[]，cost time：63207095 ns，cost：63 ms
+2025-06-26 00:10:21.558 [http-nio-20002-exec-17] INFO  com.zbkj.pc.controller.PcProductController - 根据分类获取商品，分类ID: 9, 页码: 1, 每页数量: 20
+2025-06-26 00:10:21.594 [http-nio-20002-exec-17] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcProductController.getByCategory(Integer,Integer,Integer)，prams：[9, 1, 20]，cost time：36223342 ns，cost：36 ms
+2025-06-26 00:10:23.517 [http-nio-20002-exec-18] INFO  com.zbkj.pc.controller.PcIndexController - 获取商品分类
+2025-06-26 00:10:23.609 [http-nio-20002-exec-18] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcIndexController.getCategories()，prams：[]，cost time：92196877 ns，cost：92 ms
+2025-06-26 00:10:23.621 [http-nio-20002-exec-19] INFO  com.zbkj.pc.controller.PcProductController - 根据分类获取商品，分类ID: 8, 页码: 1, 每页数量: 20
+2025-06-26 00:10:23.655 [http-nio-20002-exec-19] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcProductController.getByCategory(Integer,Integer,Integer)，prams：[8, 1, 20]，cost time：34312705 ns，cost：34 ms
+2025-06-26 00:10:23.844 [http-nio-20002-exec-20] INFO  com.zbkj.pc.controller.PcIndexController - 获取商品分类
+2025-06-26 00:10:23.936 [http-nio-20002-exec-20] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcIndexController.getCategories()，prams：[]，cost time：91609711 ns，cost：91 ms
+2025-06-26 00:10:23.952 [http-nio-20002-exec-21] INFO  com.zbkj.pc.controller.PcIndexController - 获取商品分类
+2025-06-26 00:10:23.963 [http-nio-20002-exec-22] INFO  com.zbkj.pc.controller.PcProductController - 根据分类获取商品，分类ID: 8, 页码: 1, 每页数量: 20
+2025-06-26 00:10:23.997 [http-nio-20002-exec-22] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcProductController.getByCategory(Integer,Integer,Integer)，prams：[8, 1, 20]，cost time：34276897 ns，cost：34 ms
+2025-06-26 00:10:24.017 [http-nio-20002-exec-21] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcIndexController.getCategories()，prams：[]，cost time：64500563 ns，cost：64 ms
+2025-06-26 00:10:24.034 [http-nio-20002-exec-23] INFO  com.zbkj.pc.controller.PcProductController - 根据分类获取商品，分类ID: 8, 页码: 1, 每页数量: 20
+2025-06-26 00:10:24.069 [http-nio-20002-exec-23] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcProductController.getByCategory(Integer,Integer,Integer)，prams：[8, 1, 20]，cost time：34700185 ns，cost：34 ms
+2025-06-26 00:10:24.891 [http-nio-20002-exec-24] INFO  com.zbkj.pc.controller.PcIndexController - 获取商品分类
+2025-06-26 00:10:24.981 [http-nio-20002-exec-24] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcIndexController.getCategories()，prams：[]，cost time：89849041 ns，cost：89 ms
+2025-06-26 00:10:24.992 [http-nio-20002-exec-25] INFO  com.zbkj.pc.controller.PcProductController - 根据分类获取商品，分类ID: 7, 页码: 1, 每页数量: 20
+2025-06-26 00:10:25.026 [http-nio-20002-exec-25] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcProductController.getByCategory(Integer,Integer,Integer)，prams：[7, 1, 20]，cost time：33748792 ns，cost：33 ms
+2025-06-26 00:10:25.214 [http-nio-20002-exec-26] INFO  com.zbkj.pc.controller.PcIndexController - 获取商品分类
+2025-06-26 00:10:25.305 [http-nio-20002-exec-26] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcIndexController.getCategories()，prams：[]，cost time：90937920 ns，cost：90 ms
+2025-06-26 00:10:25.319 [http-nio-20002-exec-27] INFO  com.zbkj.pc.controller.PcIndexController - 获取商品分类
+2025-06-26 00:10:25.327 [http-nio-20002-exec-28] INFO  com.zbkj.pc.controller.PcProductController - 根据分类获取商品，分类ID: 7, 页码: 1, 每页数量: 20
+2025-06-26 00:10:25.361 [http-nio-20002-exec-28] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcProductController.getByCategory(Integer,Integer,Integer)，prams：[7, 1, 20]，cost time：34733247 ns，cost：34 ms
+2025-06-26 00:10:25.385 [http-nio-20002-exec-27] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcIndexController.getCategories()，prams：[]，cost time：66208273 ns，cost：66 ms
+2025-06-26 00:10:25.399 [http-nio-20002-exec-29] INFO  com.zbkj.pc.controller.PcProductController - 根据分类获取商品，分类ID: 7, 页码: 1, 每页数量: 20
+2025-06-26 00:10:25.436 [http-nio-20002-exec-29] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcProductController.getByCategory(Integer,Integer,Integer)，prams：[7, 1, 20]，cost time：36877511 ns，cost：36 ms
+2025-06-26 00:10:26.027 [http-nio-20002-exec-30] INFO  com.zbkj.pc.controller.PcIndexController - 获取商品分类
+2025-06-26 00:10:26.116 [http-nio-20002-exec-30] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcIndexController.getCategories()，prams：[]，cost time：88220452 ns，cost：88 ms
+2025-06-26 00:10:26.127 [http-nio-20002-exec-1] INFO  com.zbkj.pc.controller.PcProductController - 根据分类获取商品，分类ID: 6, 页码: 1, 每页数量: 20
+2025-06-26 00:10:26.161 [http-nio-20002-exec-1] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcProductController.getByCategory(Integer,Integer,Integer)，prams：[6, 1, 20]，cost time：33963956 ns，cost：33 ms
+2025-06-26 00:10:26.369 [http-nio-20002-exec-2] INFO  com.zbkj.pc.controller.PcIndexController - 获取商品分类
+2025-06-26 00:10:26.483 [http-nio-20002-exec-2] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcIndexController.getCategories()，prams：[]，cost time：113556477 ns，cost：113 ms
+2025-06-26 00:10:26.494 [http-nio-20002-exec-3] INFO  com.zbkj.pc.controller.PcIndexController - 获取商品分类
+2025-06-26 00:10:26.502 [http-nio-20002-exec-4] INFO  com.zbkj.pc.controller.PcProductController - 根据分类获取商品，分类ID: 6, 页码: 1, 每页数量: 20
+2025-06-26 00:10:26.535 [http-nio-20002-exec-4] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcProductController.getByCategory(Integer,Integer,Integer)，prams：[6, 1, 20]，cost time：33839142 ns，cost：33 ms
+2025-06-26 00:10:26.560 [http-nio-20002-exec-3] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcIndexController.getCategories()，prams：[]，cost time：65987178 ns，cost：65 ms
+2025-06-26 00:10:26.579 [http-nio-20002-exec-5] INFO  com.zbkj.pc.controller.PcProductController - 根据分类获取商品，分类ID: 6, 页码: 1, 每页数量: 20
+2025-06-26 00:10:26.613 [http-nio-20002-exec-5] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcProductController.getByCategory(Integer,Integer,Integer)，prams：[6, 1, 20]，cost time：34402554 ns，cost：34 ms
+2025-06-26 00:10:27.525 [http-nio-20002-exec-6] INFO  com.zbkj.pc.controller.PcIndexController - 获取商品分类
+2025-06-26 00:10:27.614 [http-nio-20002-exec-6] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcIndexController.getCategories()，prams：[]，cost time：89057753 ns，cost：89 ms
+2025-06-26 00:10:27.624 [http-nio-20002-exec-7] INFO  com.zbkj.pc.controller.PcProductController - 根据分类获取商品，分类ID: 5, 页码: 1, 每页数量: 20
+2025-06-26 00:10:27.658 [http-nio-20002-exec-7] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcProductController.getByCategory(Integer,Integer,Integer)，prams：[5, 1, 20]，cost time：33806395 ns，cost：33 ms
+2025-06-26 00:10:27.845 [http-nio-20002-exec-8] INFO  com.zbkj.pc.controller.PcIndexController - 获取商品分类
+2025-06-26 00:10:27.937 [http-nio-20002-exec-8] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcIndexController.getCategories()，prams：[]，cost time：91230398 ns，cost：91 ms
+2025-06-26 00:10:27.952 [http-nio-20002-exec-9] INFO  com.zbkj.pc.controller.PcIndexController - 获取商品分类
+2025-06-26 00:10:27.958 [http-nio-20002-exec-10] INFO  com.zbkj.pc.controller.PcProductController - 根据分类获取商品，分类ID: 5, 页码: 1, 每页数量: 20
+2025-06-26 00:10:27.996 [http-nio-20002-exec-10] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcProductController.getByCategory(Integer,Integer,Integer)，prams：[5, 1, 20]，cost time：38070199 ns，cost：38 ms
+2025-06-26 00:10:28.018 [http-nio-20002-exec-9] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcIndexController.getCategories()，prams：[]，cost time：65719210 ns，cost：65 ms
+2025-06-26 00:10:28.036 [http-nio-20002-exec-11] INFO  com.zbkj.pc.controller.PcProductController - 根据分类获取商品，分类ID: 5, 页码: 1, 每页数量: 20
+2025-06-26 00:10:28.071 [http-nio-20002-exec-11] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcProductController.getByCategory(Integer,Integer,Integer)，prams：[5, 1, 20]，cost time：35252820 ns，cost：35 ms
+2025-06-26 00:10:28.470 [http-nio-20002-exec-12] INFO  com.zbkj.pc.controller.PcIndexController - 获取商品分类
+2025-06-26 00:10:28.559 [http-nio-20002-exec-12] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcIndexController.getCategories()，prams：[]，cost time：88449856 ns，cost：88 ms
+2025-06-26 00:10:28.570 [http-nio-20002-exec-13] INFO  com.zbkj.pc.controller.PcProductController - 根据分类获取商品，分类ID: 4, 页码: 1, 每页数量: 20
+2025-06-26 00:10:28.604 [http-nio-20002-exec-13] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcProductController.getByCategory(Integer,Integer,Integer)，prams：[4, 1, 20]，cost time：33572641 ns，cost：33 ms
+2025-06-26 00:10:28.791 [http-nio-20002-exec-14] INFO  com.zbkj.pc.controller.PcIndexController - 获取商品分类
+2025-06-26 00:10:28.880 [http-nio-20002-exec-14] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcIndexController.getCategories()，prams：[]，cost time：89376978 ns，cost：89 ms
+2025-06-26 00:10:28.892 [http-nio-20002-exec-16] INFO  com.zbkj.pc.controller.PcIndexController - 获取商品分类
+2025-06-26 00:10:28.907 [http-nio-20002-exec-15] INFO  com.zbkj.pc.controller.PcProductController - 根据分类获取商品，分类ID: 4, 页码: 1, 每页数量: 20
+2025-06-26 00:10:28.941 [http-nio-20002-exec-15] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcProductController.getByCategory(Integer,Integer,Integer)，prams：[4, 1, 20]，cost time：34355180 ns，cost：34 ms
+2025-06-26 00:10:28.956 [http-nio-20002-exec-16] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcIndexController.getCategories()，prams：[]，cost time：63279829 ns，cost：63 ms
+2025-06-26 00:10:28.973 [http-nio-20002-exec-17] INFO  com.zbkj.pc.controller.PcProductController - 根据分类获取商品，分类ID: 4, 页码: 1, 每页数量: 20
+2025-06-26 00:10:29.008 [http-nio-20002-exec-17] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcProductController.getByCategory(Integer,Integer,Integer)，prams：[4, 1, 20]，cost time：34975848 ns，cost：34 ms
+2025-06-26 00:10:29.869 [http-nio-20002-exec-18] INFO  com.zbkj.pc.controller.PcIndexController - 获取商品分类
+2025-06-26 00:10:29.958 [http-nio-20002-exec-18] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcIndexController.getCategories()，prams：[]，cost time：89222902 ns，cost：89 ms
+2025-06-26 00:10:29.968 [http-nio-20002-exec-19] INFO  com.zbkj.pc.controller.PcProductController - 根据分类获取商品，分类ID: 9, 页码: 1, 每页数量: 20
+2025-06-26 00:10:30.002 [http-nio-20002-exec-19] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcProductController.getByCategory(Integer,Integer,Integer)，prams：[9, 1, 20]，cost time：33623264 ns，cost：33 ms
+2025-06-26 00:10:30.196 [http-nio-20002-exec-20] INFO  com.zbkj.pc.controller.PcIndexController - 获取商品分类
+2025-06-26 00:10:30.285 [http-nio-20002-exec-20] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcIndexController.getCategories()，prams：[]，cost time：88579381 ns，cost：88 ms
+2025-06-26 00:10:30.298 [http-nio-20002-exec-22] INFO  com.zbkj.pc.controller.PcIndexController - 获取商品分类
+2025-06-26 00:10:30.307 [http-nio-20002-exec-21] INFO  com.zbkj.pc.controller.PcProductController - 根据分类获取商品，分类ID: 9, 页码: 1, 每页数量: 20
+2025-06-26 00:10:30.343 [http-nio-20002-exec-21] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcProductController.getByCategory(Integer,Integer,Integer)，prams：[9, 1, 20]，cost time：35925711 ns，cost：35 ms
+2025-06-26 00:10:30.364 [http-nio-20002-exec-22] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcIndexController.getCategories()，prams：[]，cost time：66284352 ns，cost：66 ms
+2025-06-26 00:10:30.377 [http-nio-20002-exec-23] INFO  com.zbkj.pc.controller.PcProductController - 根据分类获取商品，分类ID: 9, 页码: 1, 每页数量: 20
+2025-06-26 00:10:30.411 [http-nio-20002-exec-23] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcProductController.getByCategory(Integer,Integer,Integer)，prams：[9, 1, 20]，cost time：33525971 ns，cost：33 ms
+2025-06-26 00:10:31.178 [http-nio-20002-exec-24] INFO  com.zbkj.pc.controller.PcIndexController - 获取商品分类
+2025-06-26 00:10:31.268 [http-nio-20002-exec-24] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcIndexController.getCategories()，prams：[]，cost time：90028524 ns，cost：90 ms
+2025-06-26 00:10:31.295 [http-nio-20002-exec-25] INFO  com.zbkj.pc.controller.PcProductController - 获取商品列表请求: ProductFrontSearchRequest(keyword=null, cid=null, priceOrder=null, salesOrder=null, minPrice=null, maxPrice=null, brandId=null, merId=null, tagId=null)
+2025-06-26 00:10:31.435 [http-nio-20002-exec-25] INFO  com.zbkj.pc.controller.PcProductController - 获取到商品数量: 20
+2025-06-26 00:10:31.435 [http-nio-20002-exec-25] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcProductController.getList(ProductFrontSearchRequest,PageParamRequest)，prams：[ProductFrontSearchRequest(keyword=null, cid=null, priceOrder=null, salesOrder=null, minPrice=null, maxPrice=null, brandId=null, merId=null, tagId=null), PageParamRequest(page=1, limit=20)]，cost time：140264513 ns，cost：140 ms
+2025-06-26 00:10:31.511 [http-nio-20002-exec-26] INFO  com.zbkj.pc.controller.PcIndexController - 获取商品分类
+2025-06-26 00:10:31.601 [http-nio-20002-exec-26] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcIndexController.getCategories()，prams：[]，cost time：90016212 ns，cost：90 ms
+2025-06-26 00:10:31.611 [http-nio-20002-exec-28] INFO  com.zbkj.pc.controller.PcIndexController - 获取商品分类
+2025-06-26 00:10:31.619 [http-nio-20002-exec-27] INFO  com.zbkj.pc.controller.PcProductController - 获取商品列表请求: ProductFrontSearchRequest(keyword=null, cid=null, priceOrder=null, salesOrder=null, minPrice=null, maxPrice=null, brandId=null, merId=null, tagId=null)
+2025-06-26 00:10:31.676 [http-nio-20002-exec-28] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcIndexController.getCategories()，prams：[]，cost time：64896622 ns，cost：64 ms
+2025-06-26 00:10:31.762 [http-nio-20002-exec-27] INFO  com.zbkj.pc.controller.PcProductController - 获取到商品数量: 20
+2025-06-26 00:10:31.762 [http-nio-20002-exec-27] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcProductController.getList(ProductFrontSearchRequest,PageParamRequest)，prams：[ProductFrontSearchRequest(keyword=null, cid=null, priceOrder=null, salesOrder=null, minPrice=null, maxPrice=null, brandId=null, merId=null, tagId=null), PageParamRequest(page=1, limit=20)]，cost time：143347270 ns，cost：143 ms
+2025-06-26 00:10:31.780 [http-nio-20002-exec-29] INFO  com.zbkj.pc.controller.PcProductController - 获取商品列表请求: ProductFrontSearchRequest(keyword=null, cid=null, priceOrder=null, salesOrder=null, minPrice=null, maxPrice=null, brandId=null, merId=null, tagId=null)
+2025-06-26 00:10:31.936 [http-nio-20002-exec-29] INFO  com.zbkj.pc.controller.PcProductController - 获取到商品数量: 20
+2025-06-26 00:10:31.936 [http-nio-20002-exec-29] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcProductController.getList(ProductFrontSearchRequest,PageParamRequest)，prams：[ProductFrontSearchRequest(keyword=null, cid=null, priceOrder=null, salesOrder=null, minPrice=null, maxPrice=null, brandId=null, merId=null, tagId=null), PageParamRequest(page=1, limit=20)]，cost time：156726220 ns，cost：156 ms
+2025-06-26 00:10:33.052 [http-nio-20002-exec-30] INFO  com.zbkj.pc.controller.PcIndexController - 获取首页完整数据
+2025-06-26 00:10:34.349 [http-nio-20002-exec-30] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcIndexController.getIndexData()，prams：[]，cost time：1297065042 ns，cost：1297 ms
+2025-06-26 00:10:51.148 [http-nio-20002-exec-1] INFO  com.zbkj.pc.controller.PcProductController - 获取商品详情，商品ID: 778
+2025-06-26 00:10:51.524 [http-nio-20002-exec-1] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcProductController.getProductDetail(Integer)，prams：[778]，cost time：376761537 ns，cost：376 ms
+2025-06-26 00:11:04.010 [http-nio-20002-exec-2] INFO  com.zbkj.pc.controller.PcIndexController - 获取首页完整数据
+2025-06-26 00:11:05.326 [http-nio-20002-exec-2] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcIndexController.getIndexData()，prams：[]，cost time：1316324291 ns，cost：1316 ms
+2025-06-26 00:11:08.706 [http-nio-20002-exec-4] INFO  com.zbkj.pc.controller.PcProductController - 获取商品详情，商品ID: 794
+2025-06-26 00:11:09.092 [http-nio-20002-exec-4] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcProductController.getProductDetail(Integer)，prams：[794]，cost time：386078458 ns，cost：386 ms
+2025-06-26 00:11:24.230 [http-nio-20002-exec-3] INFO  com.zbkj.pc.controller.PcProductController - 获取商品详情，商品ID: 794
+2025-06-26 00:11:24.599 [http-nio-20002-exec-3] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcProductController.getProductDetail(Integer)，prams：[794]，cost time：368755897 ns，cost：368 ms
+2025-06-26 00:11:33.653 [http-nio-20002-exec-5] INFO  com.zbkj.pc.controller.PcProductController - 获取商品详情，商品ID: 776
+2025-06-26 00:11:34.013 [http-nio-20002-exec-5] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcProductController.getProductDetail(Integer)，prams：[776]，cost time：360545888 ns，cost：360 ms
+2025-06-26 00:11:37.277 [http-nio-20002-exec-7] INFO  com.zbkj.pc.controller.PcProductController - 获取商品详情，商品ID: 794
+2025-06-26 00:11:37.278 [http-nio-20002-exec-8] INFO  com.zbkj.pc.controller.PcIndexController - 获取商品分类
+2025-06-26 00:11:37.370 [http-nio-20002-exec-8] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcIndexController.getCategories()，prams：[]，cost time：91616451 ns，cost：91 ms
+2025-06-26 00:11:37.632 [http-nio-20002-exec-7] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcProductController.getProductDetail(Integer)，prams：[794]，cost time：355138766 ns，cost：355 ms
+2025-06-26 00:11:40.213 [http-nio-20002-exec-10] INFO  com.zbkj.pc.controller.PcIndexController - 获取首页完整数据
+2025-06-26 00:11:41.406 [http-nio-20002-exec-10] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcIndexController.getIndexData()，prams：[]，cost time：1192768666 ns，cost：1192 ms
+2025-06-26 00:12:06.640 [http-nio-20002-exec-9] INFO  com.zbkj.pc.controller.PcProductController - 获取商品详情，商品ID: 779
+2025-06-26 00:12:07.087 [http-nio-20002-exec-9] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcProductController.getProductDetail(Integer)，prams：[779]，cost time：446909803 ns，cost：446 ms
+2025-06-26 00:12:13.821 [http-nio-20002-exec-11] INFO  com.zbkj.pc.controller.PcIndexController - 获取首页完整数据
+2025-06-26 00:12:15.010 [http-nio-20002-exec-11] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcIndexController.getIndexData()，prams：[]，cost time：1189180424 ns，cost：1189 ms
+2025-06-26 00:12:17.705 [http-nio-20002-exec-12] INFO  com.zbkj.pc.controller.PcProductController - 获取商品详情，商品ID: 777
+2025-06-26 00:12:18.049 [http-nio-20002-exec-12] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcProductController.getProductDetail(Integer)，prams：[777]，cost time：343786071 ns，cost：343 ms
+2025-06-26 00:12:27.878 [http-nio-20002-exec-14] INFO  com.zbkj.pc.controller.PcProductController - 获取商品详情，商品ID: 777
+2025-06-26 00:12:28.217 [http-nio-20002-exec-14] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcProductController.getProductDetail(Integer)，prams：[777]，cost time：338595015 ns，cost：338 ms
+2025-06-26 00:16:25.392 [http-nio-20002-exec-16] INFO  com.zbkj.pc.controller.PcIndexController - 获取商品分类
+2025-06-26 00:16:25.395 [http-nio-20002-exec-17] INFO  com.zbkj.pc.controller.PcProductController - 获取商品详情，商品ID: 777
+2025-06-26 00:16:25.490 [http-nio-20002-exec-16] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcIndexController.getCategories()，prams：[]，cost time：97063433 ns，cost：97 ms
+2025-06-26 00:16:25.823 [http-nio-20002-exec-17] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcProductController.getProductDetail(Integer)，prams：[777]，cost time：428031260 ns，cost：428 ms
+2025-06-26 00:16:31.802 [http-nio-20002-exec-19] INFO  com.zbkj.pc.controller.PcProductController - 获取商品详情，商品ID: 776
+2025-06-26 00:16:32.167 [http-nio-20002-exec-19] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcProductController.getProductDetail(Integer)，prams：[776]，cost time：365109223 ns，cost：365 ms
+2025-06-26 00:16:52.195 [http-nio-20002-exec-21] INFO  com.zbkj.pc.controller.PcProductController - 获取商品详情，商品ID: 777
+2025-06-26 00:16:52.561 [http-nio-20002-exec-21] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcProductController.getProductDetail(Integer)，prams：[777]，cost time：365866898 ns，cost：365 ms
+2025-06-26 00:19:24.976 [http-nio-20002-exec-23] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcUserController.login(Map)，prams：[{phone=18202773184, password=000000}]，cost time：267999504 ns，cost：267 ms
+2025-06-26 00:19:25.054 [http-nio-20002-exec-24] INFO  com.zbkj.pc.controller.PcIndexController - 获取商品分类
+2025-06-26 00:19:25.054 [http-nio-20002-exec-25] INFO  com.zbkj.pc.controller.PcIndexController - 获取首页完整数据
+2025-06-26 00:19:25.142 [http-nio-20002-exec-24] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcIndexController.getCategories()，prams：[]，cost time：88035724 ns，cost：88 ms
+2025-06-26 00:19:26.684 [http-nio-20002-exec-25] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcIndexController.getIndexData()，prams：[]，cost time：1630451227 ns，cost：1630 ms
+2025-06-26 00:21:45.775 [http-nio-20002-exec-26] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcUserController.login(Map)，prams：[{phone=18202773184, password=000000}]，cost time：248396172 ns，cost：248 ms
+2025-06-26 00:22:36.239 [http-nio-20002-exec-28] INFO  com.zbkj.pc.controller.PcIndexController - 获取商品分类
+2025-06-26 00:22:36.239 [http-nio-20002-exec-27] INFO  com.zbkj.pc.controller.PcIndexController - 获取首页完整数据
+2025-06-26 00:22:36.329 [http-nio-20002-exec-28] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcIndexController.getCategories()，prams：[]，cost time：90679767 ns，cost：90 ms
+2025-06-26 00:22:37.558 [http-nio-20002-exec-27] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcIndexController.getIndexData()，prams：[]，cost time：1319616972 ns，cost：1319 ms
+2025-06-26 00:22:48.959 [http-nio-20002-exec-30] INFO  com.zbkj.pc.controller.PcIndexController - 获取首页完整数据
+2025-06-26 00:22:48.959 [http-nio-20002-exec-29] INFO  com.zbkj.pc.controller.PcIndexController - 获取商品分类
+2025-06-26 00:22:49.049 [http-nio-20002-exec-29] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcIndexController.getCategories()，prams：[]，cost time：89453206 ns，cost：89 ms
+2025-06-26 00:22:49.836 [http-nio-20002-exec-1] INFO  com.zbkj.pc.controller.PcIndexController - 获取商品分类
+2025-06-26 00:22:49.836 [http-nio-20002-exec-2] INFO  com.zbkj.pc.controller.PcIndexController - 获取首页完整数据
+2025-06-26 00:22:49.927 [http-nio-20002-exec-1] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcIndexController.getCategories()，prams：[]，cost time：91699115 ns，cost：91 ms
+2025-06-26 00:22:50.235 [http-nio-20002-exec-30] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcIndexController.getIndexData()，prams：[]，cost time：1275967180 ns，cost：1275 ms
+2025-06-26 00:22:50.494 [http-nio-20002-exec-4] INFO  com.zbkj.pc.controller.PcIndexController - 获取商品分类
+2025-06-26 00:22:50.494 [http-nio-20002-exec-3] INFO  com.zbkj.pc.controller.PcIndexController - 获取首页完整数据
+2025-06-26 00:22:50.583 [http-nio-20002-exec-4] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcIndexController.getCategories()，prams：[]，cost time：89269031 ns，cost：89 ms
+2025-06-26 00:22:50.772 [http-nio-20002-exec-5] INFO  com.zbkj.pc.controller.PcIndexController - 获取商品分类
+2025-06-26 00:22:50.772 [http-nio-20002-exec-6] INFO  com.zbkj.pc.controller.PcIndexController - 获取首页完整数据
+2025-06-26 00:22:50.835 [http-nio-20002-exec-5] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcIndexController.getCategories()，prams：[]，cost time：63338062 ns，cost：63 ms
+2025-06-26 00:22:51.022 [http-nio-20002-exec-7] INFO  com.zbkj.pc.controller.PcIndexController - 获取首页完整数据
+2025-06-26 00:22:51.022 [http-nio-20002-exec-8] INFO  com.zbkj.pc.controller.PcIndexController - 获取商品分类
+2025-06-26 00:22:51.086 [http-nio-20002-exec-8] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcIndexController.getCategories()，prams：[]，cost time：63943847 ns，cost：63 ms
+2025-06-26 00:22:52.082 [http-nio-20002-exec-3] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcIndexController.getIndexData()，prams：[]，cost time：1587673196 ns，cost：1587 ms
+2025-06-26 00:22:52.293 [http-nio-20002-exec-6] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcIndexController.getIndexData()，prams：[]，cost time：1521464692 ns，cost：1521 ms
+2025-06-26 00:22:52.303 [http-nio-20002-exec-2] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcIndexController.getIndexData()，prams：[]，cost time：2467012160 ns，cost：2467 ms
+2025-06-26 00:22:52.360 [http-nio-20002-exec-7] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcIndexController.getIndexData()，prams：[]，cost time：1337934901 ns，cost：1337 ms
+2025-06-26 00:22:57.433 [http-nio-20002-exec-10] INFO  com.zbkj.pc.controller.PcIndexController - 获取商品分类
+2025-06-26 00:22:57.525 [http-nio-20002-exec-10] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcIndexController.getCategories()，prams：[]，cost time：91606883 ns，cost：91 ms
+2025-06-26 00:23:11.277 [http-nio-20002-exec-9] INFO  com.zbkj.pc.controller.PcIndexController - 获取商品分类
+2025-06-26 00:23:11.367 [http-nio-20002-exec-9] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcIndexController.getCategories()，prams：[]，cost time：89688595 ns，cost：89 ms
+2025-06-26 00:23:24.160 [http-nio-20002-exec-11] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcUserController.login(Map)，prams：[{phone=18202773184, password=000000}]，cost time：209673416 ns，cost：209 ms
+2025-06-26 00:23:24.387 [http-nio-20002-exec-12] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcUserController.login(Map)，prams：[{phone=18202773184, password=000000}]，cost time：214673383 ns，cost：214 ms
+2025-06-26 00:23:24.857 [http-nio-20002-exec-13] INFO  com.zbkj.pc.controller.PcIndexController - 获取商品分类
+2025-06-26 00:23:24.858 [http-nio-20002-exec-14] INFO  com.zbkj.pc.controller.PcIndexController - 获取首页完整数据
+2025-06-26 00:23:24.946 [http-nio-20002-exec-13] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcIndexController.getCategories()，prams：[]，cost time：89022220 ns，cost：89 ms
+2025-06-26 00:23:24.954 [http-nio-20002-exec-15] INFO  com.zbkj.pc.controller.PcIndexController - 获取商品分类
+2025-06-26 00:23:25.015 [http-nio-20002-exec-15] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcIndexController.getCategories()，prams：[]，cost time：61647078 ns，cost：61 ms
+2025-06-26 00:23:26.204 [http-nio-20002-exec-14] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcIndexController.getIndexData()，prams：[]，cost time：1346360265 ns，cost：1346 ms
+2025-06-26 00:23:31.280 [http-nio-20002-exec-16] INFO  com.zbkj.pc.controller.PcIndexController - 获取商品分类
+2025-06-26 00:23:31.280 [http-nio-20002-exec-17] INFO  com.zbkj.pc.controller.PcIndexController - 获取首页完整数据
+2025-06-26 00:23:31.372 [http-nio-20002-exec-16] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcIndexController.getCategories()，prams：[]，cost time：92025502 ns，cost：92 ms
+2025-06-26 00:23:32.600 [http-nio-20002-exec-17] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcIndexController.getIndexData()，prams：[]，cost time：1319132956 ns，cost：1319 ms
+2025-06-26 00:23:35.305 [http-nio-20002-exec-18] INFO  com.zbkj.pc.controller.PcProductController - 获取商品详情，商品ID: 779
+2025-06-26 00:23:35.771 [http-nio-20002-exec-18] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcProductController.getProductDetail(Integer)，prams：[779]，cost time：466165912 ns，cost：466 ms
+2025-06-26 00:23:38.419 [http-nio-20002-exec-19] INFO  com.zbkj.pc.controller.PcIndexController - 获取首页完整数据
+2025-06-26 00:23:39.693 [http-nio-20002-exec-19] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcIndexController.getIndexData()，prams：[]，cost time：1274021525 ns，cost：1274 ms
+2025-06-26 00:23:42.956 [http-nio-20002-exec-20] INFO  com.zbkj.pc.controller.PcProductController - 获取商品详情，商品ID: 794
+2025-06-26 00:23:43.299 [http-nio-20002-exec-20] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcProductController.getProductDetail(Integer)，prams：[794]，cost time：342859068 ns，cost：342 ms
+2025-06-26 00:23:59.181 [http-nio-20002-exec-22] INFO  com.zbkj.pc.controller.PcIndexController - 获取商品分类
+2025-06-26 00:23:59.273 [http-nio-20002-exec-22] INFO  com.zbkj.pc.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.pc.controller.PcIndexController.getCategories()，prams：[]，cost time：91529031 ns，cost：91 ms
+2025-06-26 00:24:48.471 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'taskExecutor'
+2025-06-26 00:24:48.672 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2025-06-26 00:24:48.676 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2025-06-26 11:30:42.638 [main] INFO  com.zbkj.pc.CrmebPcApplication - Starting CrmebPcApplication on macdeMacBook-Pro.local with PID 8009 (/Users/mac/tool/商城装修系统/finance/finance-pc/target/classes started by mac in /Users/mac/tool/商城装修系统/finance/finance-pc)
+2025-06-26 11:30:42.640 [main] INFO  com.zbkj.pc.CrmebPcApplication - The following profiles are active: dev
+2025-06-26 11:30:44.230 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-06-26 11:30:44.232 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-06-26 11:30:44.255 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9ms. Found 0 Redis repository interfaces.
+2025-06-26 11:30:45.570 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 20002 (http)
+2025-06-26 11:30:45.581 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-20002"]
+2025-06-26 11:30:45.582 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-06-26 11:30:45.582 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2025-06-26 11:30:45.820 [main] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-06-26 11:30:45.824 [main] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-06-26 11:30:45.824 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3129 ms
+2025-06-26 11:30:54.995 [main] INFO  c.a.c.config.AjCaptchaServiceAutoConfiguration - 自定义配置项：
+AjCaptchaProperties{type=DEFAULT, jigsaw='classpath:images/jigsaw', picClick='classpath:images/pic-click', waterMark='CRMEB Java', waterFont='WenQuanZhengHei.ttf', fontType='WenQuanZhengHei.ttf', slipOffset='5', aesStatus=true, interferenceOptions='2', cacheNumber='1000', timingClear='3600', cacheType=redis, reqFrequencyLimitEnable=false, reqGetLockLimit=5, reqGetLockSeconds=360, reqGetMinuteLimit=30, reqCheckMinuteLimit=60, reqVerifyMinuteLimit=60}
+2025-06-26 11:30:55.026 [main] INFO  com.anji.captcha.util.ImageUtils - 自定义resource底图:[SLIDING_BLOCK=[Ljava.lang.String;@33bc7565, ORIGINAL=[Ljava.lang.String;@7bca96d6, PIC_CLICK=[Ljava.lang.String;@4f2e6db7]
+2025-06-26 11:30:55.029 [main] INFO  c.anji.captcha.service.impl.CaptchaServiceFactory - supported-captchaCache-service:[local]
+2025-06-26 11:30:55.033 [main] INFO  c.anji.captcha.service.impl.CaptchaServiceFactory - supported-captchaTypes-service:[clickWord, default, blockPuzzle]
+2025-06-26 11:30:55.033 [main] INFO  c.a.c.service.impl.ClickWordCaptchaServiceImpl - --->>>初始化验证码底图<<<---clickWord
+2025-06-26 11:30:55.372 [main] INFO  c.a.c.service.impl.BlockPuzzleCaptchaServiceImpl - --->>>初始化验证码底图<<<---blockPuzzle
+2025-06-26 11:30:57.049 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2025-06-26 11:30:57.234 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@480a5088, org.springframework.security.web.context.SecurityContextPersistenceFilter@548051d7, org.springframework.security.web.header.HeaderWriterFilter@51934be2, org.springframework.security.web.authentication.logout.LogoutFilter@2b2c7991, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@51761e07, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@65ec90d5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@53c7c937, org.springframework.security.web.session.SessionManagementFilter@b8df260, org.springframework.security.web.access.ExceptionTranslationFilter@ad038f8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6aa2ffd3]
+2025-06-26 11:30:57.475 [main] INFO  org.redisson.Version - Redisson 3.14.1
+2025-06-26 11:30:57.964 [redisson-netty-2-21] INFO  o.r.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for /43.138.4.152:6379
+2025-06-26 11:30:58.208 [redisson-netty-2-19] INFO  org.redisson.connection.pool.MasterConnectionPool - 24 connections initialized for /43.138.4.152:6379
+2025-06-26 11:30:58.268 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2025-06-26 11:30:58.303 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService
+2025-06-26 11:30:58.304 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'taskExecutor'
+2025-06-26 11:30:58.942 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2025-06-26 11:30:58.954 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 2 custom documentation plugin(s)
+2025-06-26 11:30:58.978 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2025-06-26 11:30:59.341 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2025-06-26 11:30:59.357 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-20002"]
+2025-06-26 11:30:59.365 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-20002"]
+2025-06-26 11:30:59.365 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2025-06-26 11:30:59.394 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-20002"]
+2025-06-26 11:30:59.394 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-20002"]
+2025-06-26 11:30:59.427 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'taskExecutor'
+2025-06-26 11:30:59.585 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...

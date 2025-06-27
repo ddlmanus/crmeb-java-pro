@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zbkj.service.dao.EmployeeDao">
+
+    <!-- 获取员工列表（包含用户信息） -->
+    <select id="getEmployeeList" resultType="com.zbkj.common.response.employee.EmployeeResponse">
+        SELECT 
+            e.id,
+            e.user_id as userId,
+            e.employee_no as employeeNo,
+            e.name,
+            e.phone,
+            e.email,
+            e.id_card as idCard,
+            e.avatar,
+            e.gender,
+            CASE 
+                WHEN e.gender = 0 THEN '未知'
+                WHEN e.gender = 1 THEN '男'
+                WHEN e.gender = 2 THEN '女'
+                ELSE '未知'
+            END as genderText,
+            e.status,
+            CASE 
+                WHEN e.status = 0 THEN '离职'
+                WHEN e.status = 1 THEN '在职'
+                WHEN e.status = 2 THEN '试用期'
+                ELSE '未知'
+            END as statusText,
+            e.remark,
+            e.create_time as createTime,
+            e.update_time as updateTime,
+            u.account,
+            u.nickname,
+            u.status as userStatus,
+            u.last_login_time as lastLoginTime,
+            e.farm_type as farmType,
+            CASE 
+                WHEN e.farm_type = 0 THEN '游客'
+                WHEN e.farm_type = 1 THEN '种植户/种植企业'
+                WHEN e.farm_type = 2 THEN '合作社'
+                WHEN e.farm_type = 3 THEN '经纪人'
+                WHEN e.farm_type = 4 THEN '供应商'
+                WHEN e.farm_type = 5 THEN '平台'
+                ELSE '未知'
+            END as farmTypeText,
+            e.farm_id as farmId,
+            e.farm_code as farmCode,
+            e.farm_name as farmName,
+            e.responsible_person as responsiblePerson,
+            e.credit_coefficient as creditCoefficient,
+            e.credit_limit as creditLimit,
+            e.consumed_amount as consumedAmount,
+            e.assessment_amount as assessmentAmount,
+            e.total_stock_quantity as totalStockQuantity,
+            e.breeding_variety_names as breedingVarietyNames,
+            e.breeding_variety_types as breedingVarietyTypes,
+            u.remaining_credit as remainingCredit,
+            u.used_credit as usedCredit,
+            u.pending_repayment as pendingRepayment,
+            u.credit_status as creditStatus,
+            u.credit_start_time as creditStartTime,
+            u.credit_end_time as creditEndTime,
+            u.parent_credit_user_id as parentCreditUserId,
+            u.credit_level as creditLevel,
+            u.last_credit_audit_time as lastCreditAuditTime,
+            u.last_credit_audit_user_id as lastCreditAuditUserId,
+            u.credit_audit_remark as creditAuditRemark
+        FROM eb_employee e
+        LEFT JOIN eb_user u ON e.user_id = u.id
+        WHERE e.is_deleted = 0
+        <if test="keywords != null and keywords != ''">
+            AND (
+                e.name LIKE CONCAT('%', #{keywords}, '%')
+                OR e.phone LIKE CONCAT('%', #{keywords}, '%')
+                OR e.employee_no LIKE CONCAT('%', #{keywords}, '%')
+            )
+        </if>
+        <if test="status != null">
+            AND e.status = #{status}
+        </if>
+        <if test="gender != null">
+            AND e.gender = #{gender}
+        </if>
+        <if test="farmType != null">
+            AND e.farm_type = #{farmType}
+        </if>
+        <if test="farmName != null and farmName != ''">
+            AND e.farm_name LIKE CONCAT('%', #{farmName}, '%')
+        </if>
+        <if test="companyName != null and companyName != ''">
+            AND e.company_name LIKE CONCAT('%', #{companyName}, '%')
+        </if>
+        <if test="breedingVariety != null and breedingVariety != ''">
+            AND e.breeding_variety LIKE CONCAT('%', #{breedingVariety}, '%')
+        </if>
+        ORDER BY e.create_time DESC
+    </select>
+
+    <!-- 根据ID获取员工详细信息（包含用户信息） -->
+    <select id="getEmployeeDetail" resultType="com.zbkj.common.response.employee.EmployeeResponse">
+        SELECT 
+            e.id,
+            e.user_id as userId,
+            e.employee_no as employeeNo,
+            e.name,
+            e.phone,
+            e.email,
+            e.id_card as idCard,
+            e.avatar,
+            e.gender,
+            CASE 
+                WHEN e.gender = 0 THEN '未知'
+                WHEN e.gender = 1 THEN '男'
+                WHEN e.gender = 2 THEN '女'
+                ELSE '未知'
+            END as genderText,
+            e.status,
+            CASE 
+                WHEN e.status = 0 THEN '离职'
+                WHEN e.status = 1 THEN '在职'
+                WHEN e.status = 2 THEN '试用期'
+                ELSE '未知'
+            END as statusText,
+            e.remark,
+            e.create_time as createTime,
+            e.update_time as updateTime,
+            u.account,
+            u.nickname,
+            u.status as userStatus,
+            u.last_login_time as lastLoginTime,
+            e.farm_type as farmType,
+            CASE 
+                WHEN e.farm_type = 0 THEN '游客'
+                WHEN e.farm_type = 1 THEN '种植户/种植企业'
+                WHEN e.farm_type = 2 THEN '合作社'
+                WHEN e.farm_type = 3 THEN '经纪人'
+                WHEN e.farm_type = 4 THEN '供应商'
+                WHEN e.farm_type = 5 THEN '平台'
+                ELSE '未知'
+            END as farmTypeText,
+            e.farm_id as farmId,
+            e.farm_code as farmCode,
+            e.farm_name as farmName,
+            e.responsible_person as responsiblePerson,
+            e.credit_coefficient as creditCoefficient,
+            e.credit_limit as creditLimit,
+            e.consumed_amount as consumedAmount,
+            e.assessment_amount as assessmentAmount,
+            e.total_stock_quantity as totalStockQuantity,
+            e.breeding_variety_names as breedingVarietyNames,
+            e.breeding_variety_types as breedingVarietyTypes,
+            u.remaining_credit as remainingCredit,
+            u.used_credit as usedCredit,
+            u.pending_repayment as pendingRepayment,
+            u.credit_status as creditStatus,
+            u.credit_start_time as creditStartTime,
+            u.credit_end_time as creditEndTime,
+            u.parent_credit_user_id as parentCreditUserId,
+            u.credit_level as creditLevel,
+            u.last_credit_audit_time as lastCreditAuditTime,
+            u.last_credit_audit_user_id as lastCreditAuditUserId,
+            u.credit_audit_remark as creditAuditRemark
+        FROM eb_employee e
+        LEFT JOIN eb_user u ON e.user_id = u.id
+        WHERE e.id = #{id} AND e.is_deleted = 0
+    </select>
+
+    <!-- ==================== 员工授信统计相关查询 ==================== -->
+
+    <!-- 获取员工授信统计概览数据 -->
+    <select id="getEmployeeCreditStatistics" resultType="com.zbkj.common.response.employee.EmployeeCreditStatisticsResponse">
+        SELECT 
+            COUNT(*) as totalEmployees,
+            COUNT(CASE WHEN e.credit_limit > 0 THEN 1 END) as creditEmployees,
+            COALESCE(SUM(e.credit_limit), 0) as totalCreditAmount,
+            COALESCE(SUM(e.consumed_amount), 0) as usedCreditAmount,
+            COALESCE(SUM(e.credit_limit - COALESCE(e.consumed_amount, 0)), 0) as availableCreditAmount,
+            CASE 
+                WHEN COUNT(CASE WHEN e.credit_limit > 0 THEN 1 END) > 0 
+                THEN COALESCE(SUM(e.credit_limit), 0) / COUNT(CASE WHEN e.credit_limit > 0 THEN 1 END)
+                ELSE 0 
+            END as averageCreditAmount
+        FROM eb_employee e
+        WHERE e.is_deleted = 0 AND e.status IN (1, 2)
+    </select>
+
+    <!-- 获取员工授信明细列表 -->
+    <select id="getEmployeeCreditDetailList" resultType="com.zbkj.common.response.employee.EmployeeCreditDetailResponse">
+        SELECT 
+            e.id,
+            e.name,
+            e.phone,
+            e.farm_name as farmInstitutionName,
+            COALESCE(e.credit_limit, 0) as creditLimit,
+            COALESCE(e.consumed_amount, 0) as usedCredit,
+            COALESCE(e.credit_limit - COALESCE(e.consumed_amount, 0), 0) as availableCredit,
+            e.credit_coefficient as creditCoefficient,
+            CASE 
+                WHEN e.credit_limit > 0 AND e.consumed_amount > 0 
+                THEN ROUND((e.consumed_amount / e.credit_limit) * 100, 2)
+                ELSE 0 
+            END as creditUtilizationRate,
+            e.update_time as lastCreditTime,
+            e.status,
+            CASE 
+                WHEN e.credit_limit > 0 THEN 1
+                ELSE 0 
+            END as creditStatus
+        FROM eb_employee e
+        WHERE e.is_deleted = 0
+        <if test="name != null and name != ''">
+            AND e.name LIKE CONCAT('%', #{name}, '%')
+        </if>
+        <if test="phone != null and phone != ''">
+            AND e.phone LIKE CONCAT('%', #{phone}, '%')
+        </if>
+        <if test="farmInstitutionId != null">
+            AND e.farm_id = #{farmInstitutionId}
+        </if>
+        <if test="creditStatus != null and creditStatus != ''">
+            <if test="creditStatus == '1'">
+                AND e.credit_limit > 0
+            </if>
+            <if test="creditStatus == '0'">
+                AND (e.credit_limit IS NULL OR e.credit_limit = 0)
+            </if>
+        </if>
+        ORDER BY e.credit_limit DESC, e.create_time DESC
+    </select>
+
+    <!-- 获取员工授信趋势数据 -->
+    <select id="getEmployeeCreditTrend" resultType="com.zbkj.common.response.employee.EmployeeCreditTrendResponse">
+        SELECT 
+            DATE_FORMAT(dates.date_value, '%Y-%m') as dateStr,
+            COALESCE(SUM(e.credit_limit), 0) as totalAmount,
+            COALESCE(SUM(e.consumed_amount), 0) as usedAmount,
+            COUNT(CASE WHEN e.credit_limit > 0 THEN 1 END) as creditEmployeeCount
+        FROM (
+            SELECT DISTINCT DATE_FORMAT(create_time, '%Y-%m-01') as date_value
+            FROM eb_employee 
+            WHERE is_deleted = 0
+            <if test="startDate != null and startDate != ''">
+                AND create_time >= #{startDate}
+            </if>
+            <if test="endDate != null and endDate != ''">
+                AND create_time &lt;= #{endDate}
+            </if>
+            UNION
+            SELECT DISTINCT DATE_FORMAT(update_time, '%Y-%m-01') as date_value
+            FROM eb_employee 
+            WHERE is_deleted = 0 AND credit_limit > 0
+            <if test="startDate != null and startDate != ''">
+                AND update_time >= #{startDate}
+            </if>
+            <if test="endDate != null and endDate != ''">
+                AND update_time &lt;= #{endDate}
+            </if>
+        ) dates
+        LEFT JOIN eb_employee e ON DATE_FORMAT(e.create_time, '%Y-%m-01') = dates.date_value 
+            AND e.is_deleted = 0
+        GROUP BY dates.date_value
+        ORDER BY dates.date_value ASC
+    </select>
+
+</mapper> 

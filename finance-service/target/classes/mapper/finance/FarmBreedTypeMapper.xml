@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zbkj.service.dao.finance.FarmBreedTypeDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zbkj.common.model.finance.FarmBreedType">
+        <id column="id" property="id" />
+        <result column="farm_name" property="farmName" />
+        <result column="farm_id" property="farmId" />
+        <result column="farm_code" property="farmCode" />
+        <result column="breed_name" property="breedName" />
+        <result column="breed_id" property="breedId" />
+        <result column="breed_type" property="breedType" />
+        <result column="stock_quantity" property="stockQuantity" />
+        <result column="growth_stage" property="growthStage" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+        <result column="delete_flag" property="deleteFlag" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, farm_name, farm_id, farm_code, breed_name, breed_id, breed_type, stock_quantity, growth_stage, create_time, update_time, delete_flag
+    </sql>
+
+</mapper> 
